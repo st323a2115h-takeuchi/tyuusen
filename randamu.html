@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダム遷移</title>
+</head>
+<body>
+    <h1>QRコードをスキャンしてランダム遷移</h1>
+    <button onclick="navigateRandom()">ランダムに遷移</button>
+    <script>
+        function navigateRandom() {
+            const urls = [
+                "https://st323a2115h-takeuchi.github.io/tyuusen/",
+                "https://st323a2115h-takeuchi.github.io/tyuusen/hazure.html",
+                
+            ];
+            const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+            window.location.href = randomUrl;
+        }
+    </script>
+</body>
+</html>
